@@ -31,4 +31,11 @@ function displayMovieDetails(film){
 
     const p = document.querySelector('.description');
     p.textContent = film.description
+
+    const l1 = document.getElementById('l1');
+    l1.textContent = `Runtime:${film.runtime}`
+
+    const l2 = document.getElementById('l2');
+    l2.textContent = `Showtime:${film.showtime}`
+    
 }
