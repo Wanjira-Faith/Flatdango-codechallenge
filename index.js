@@ -45,6 +45,14 @@ function displayMovieDetails(film){
     const btn = document.getElementById('btn');
     btn.textContent = 'Buy Ticket'
 
-    
-
+    btn.addEventListener('click', (e) =>{
+        if(availabeTickets > 0){
+            availabeTickets--;
+            l3.textContent = `Available Tickets:${availabeTickets}`
+            btn.textContent = 'Buy Ticket'
+        }
+        else{
+            btn.textContent = 'Sold Out'
+        }
+    })
 }
