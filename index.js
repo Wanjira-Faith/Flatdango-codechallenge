@@ -12,5 +12,11 @@ function displayMovieList(films){
         const list =document.createElement('li');
         list.textContent = film.title
         movieList.appendChild(list);
+
+        //display first movie when the page loads
+        if(film === films[0]){
+            displayMovieDetails(film)
+        }
+ 
     })
 }
