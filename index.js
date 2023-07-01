@@ -37,5 +37,9 @@ function displayMovieDetails(film){
 
     const l2 = document.getElementById('l2');
     l2.textContent = `Showtime:${film.showtime}`
-    
+
+    let availabeTickets = film.capacity - film.tickets_sold;
+    const l3 = document.getElementById('l3')
+    l3.textContent = `Available Tickets:${availabeTickets}`
+
 }
