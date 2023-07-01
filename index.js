@@ -56,3 +56,6 @@ function displayMovieDetails(film){
         }
     })
 }
+document.addEventListener('DOMContentLoaded', () =>{
+    fetchfilms();
+})
