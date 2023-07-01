@@ -17,6 +17,9 @@ function displayMovieList(films){
         if(film === films[0]){
             displayMovieDetails(film)
         }
+        list.addEventListener('click', () =>{
+            displayMovieDetails(film)
+        });
  
     })
 }
