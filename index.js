@@ -20,6 +20,15 @@ function displayMovieList(films){
         list.addEventListener('click', () =>{
             displayMovieDetails(film)
         });
- 
-    })
+    });
+}
+function displayMovieDetails(film){
+    const moviePoster = document.getElementById('image');
+    moviePoster.src = film.poster
+
+    const h3 = document.querySelector('.title');
+    h3.textContent = film.title
+
+    const p = document.querySelector('.description');
+    p.textContent = film.description
 }
