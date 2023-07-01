@@ -5,3 +5,12 @@ function fetchfilms(){
     .then(resp => resp.json())
     .then(films =>displayMovieList(films))
 }
+
+function displayMovieList(films){
+    const movieList =document.getElementById('movie-list')
+    films.forEach(film => {
+        const list =document.createElement('li');
+        list.textContent = film.title
+        movieList.appendChild(list);
+    })
+}
