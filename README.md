@@ -17,7 +17,7 @@ db.json
 
 json --server
 
-# Project Setup
+# Running the application
 .Install and Run Json Server using the following commands; 
 
 npm install -g json-server 
@@ -35,4 +35,9 @@ json-server--watch db.json
 
 .After clicking the buy ticket button when there are 0 tickets availabe, the button text changes to 'sold out' to let you know that all the movie tickets have been sold.
 
+# Author
+Wanjira Faith
+
+# License
+MIT
 
